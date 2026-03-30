@@ -1,3 +1,4 @@
+/* ===== Existing styles (keep yours) ===== */
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
@@ -8,4 +9,42 @@ body {
 header {
   position: sticky;
   top: 0;
+}
+
+/* ===== Navbar layout ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+/* Button */
+#theme-toggle {
+  padding: 6px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* Header in dark mode */
+[data-theme="dark"] header {
+  background: #1f1f1f;
+}
+
+/* Links in dark mode */
+[data-theme="dark"] a {
+  color: #ffffff;
 }
