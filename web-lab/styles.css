@@ -4,3 +4,8 @@ body {
   padding: 2rem;
   background: #f6f8fa;
 }
+
+header {
+  position: sticky;
+  top: 0;
+}
