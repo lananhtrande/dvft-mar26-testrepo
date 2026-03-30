@@ -1,6 +1,80 @@
+/* ===== Base ===== */
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
-  padding: 2rem;
-  background: #f6f8fa;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* ===== Header ===== */
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  color: #2563eb; /* nice blue */
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Button */
+#theme-toggle {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: #1d4ed8;
+}
+
+/* ===== Dark mode ===== */
+[data-theme="dark"] {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] header {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+[data-theme="dark"] a {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] #theme-toggle {
+  background: #e5e7eb;
+  color: #111827;
 }
