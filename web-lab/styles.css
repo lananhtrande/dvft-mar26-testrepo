@@ -4,11 +4,14 @@ body {
   margin: 0;
   padding: 2rem;
   background: #f6f8fa;
+  color: #222;
 }
 
 header {
   position: sticky;
   top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 /* ===== Navbar layout ===== */
@@ -23,10 +26,13 @@ header {
   list-style: none;
   display: flex;
   gap: 15px;
+  color: #374151;
 }
 
 /* Button */
 #theme-toggle {
+  background: #2563eb;
+  color: white;
   padding: 6px 10px;
   cursor: pointer;
   border: none;
