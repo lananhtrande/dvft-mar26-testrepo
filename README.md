@@ -1,3 +1,10 @@
+## v1.0.0
+
+- Added header with navigation
+- Added dark mode toggle
+- Improved UI colors
+- Project ready for release
+  
 ## Dark Theme Toggle
 
 A toggle button has been added to the header.
